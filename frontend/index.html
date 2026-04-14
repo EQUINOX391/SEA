@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Ekosistem Laut Pesisir 3D</title>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #001e2d; }
+      canvas { display: block; }
+      #ui-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        color: white;
+        font-family: sans-serif;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 8px;
+        pointer-events: none; /* Biarkan klik tembus ke canvas kecuali tombol */
+      }
+      #ui-container * {
+        pointer-events: auto; /* Aktifkan klik untuk elemen UI */
+      }
+      h1 { font-size: 1.2rem; margin: 0 0 10px 0; color: #4fc3f7; }
+      .stat { font-size: 0.9rem; margin: 5px 0; }
+      button {
+        background: #ff7043;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: background 0.2s;
+      }
+      button:hover { background: #f4511e; }
+      button:active { transform: scale(0.98); }
+      .warning { color: #ffb74d; font-size: 0.8rem; margin-top: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
