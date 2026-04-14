@@ -1,0 +1,40 @@
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dependencies
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Node.js
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+htmlcov/
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.coverage
+```
